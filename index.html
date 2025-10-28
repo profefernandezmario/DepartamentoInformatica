@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento de Informática - E.F.P. N°7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header-bg">
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="media/logosDepto/generated-image (3).png" alt="Logo EFP7">
+            </div>
+            <div class="header-center">
+                <h1>Departamento de Informática</h1>
+                <p>Avda. Castelli 1150 - Resistencia, Chaco</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- OFERTAS EDUCATIVAS LISTADO UNIFICADO -->
+    <section class="container py-4">
+        <h2 class="display-5 fw-bold mb-4 text-uppercase text-center">Ofertas Educativas</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Aquí van todas las tarjetas de ofertas (ordena y completa datos según tus necesidades) -->
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Asistente de Administración y Gestión con Herramientas Informáticas - Turno Mañana</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalAGHITM">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Asistente de Administración y Gestión con Herramientas Informáticas - Turno Tarde</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalAGHITT">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Asistente de Administración y Gestión con Herramientas Informáticas - Turno Noche</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalAGHITN">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Asistente informático en soporte técnico - Turno Mañana</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalSoporteTM">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Asistente informático en soporte técnico - Turno Tarde</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalSoporteTT">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Internet y Redes Sociales para Adultos Mayores</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalIRSAM">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Linux esencial</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalLinux">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Mantenimiento preventivo de impresoras</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalImpresoras">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Operador de informática para administración y gestión</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalOIGA">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Operador de PC para Adultos Mayores</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalOPAM">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Operador de planilla de cálculos para la administración</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalPlanilla">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Operador de procesador de textos para la administración</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalTextos">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Redacción administrativa y comercial</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalRedaccion">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Reparador de PC y Periféricos - Turno Mañana</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalReparadorTM">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Reparador de PC y Periféricos - Turno Tarde</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalReparadorTT">Más
+                        info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODALES (uno por cada oferta, completá los datos según tu contenido real) -->
+
+    <!-- Ejemplo modal. Copia y adapta para cada oferta -->
+    <div class="modal fade modal-custom" id="modalAGHITM" tabindex="-1" aria-labelledby="modalAGHITMLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalAGHILabel">Asistente de Administración y Gestión con
+                        Herramientas Informáticas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 3</p>
+                    <p><b>Turno:</b> Mañana</p>
+                    <p><b>Duraci;on:</b> Anual</p>
+                    <p><b>Dias:</b> Lunes a Jueves</p>
+                    <p><b>Horario:</b> 08:00hs. a 12:00hs.</p>
+                    <p><b>Fundamentación:</b> Formación integral para tareas administrativas apoyadas en herramientas
+                        digitales.</p>
+                    <p><b>Docente:</b> M.E.P. Cuesta, Jorge</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalAGHITT" tabindex="-1" aria-labelledby="modalAGHITTLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalAGHILabel">Asistente de Administración y Gestión con
+                        Herramientas Informáticas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 3</p>
+                    <p><b>Turno:</b> Tarde</p>
+                    <p><b>Duraci;on:</b> Anual</p>
+                    <p><b>Dias:</b> Lunes a Jueves</p>
+                    <p><b>Horario:</b> 14:00hs. a 18:00hs.</p>
+                    <p><b>Fundamentación:</b> Formación integral para tareas administrativas apoyadas en herramientas
+                        digitales.</p>
+                    <p><b>Docente:</b> M.E.P. Cuesta, Jorge</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalAGHITN" tabindex="-1" aria-labelledby="modalAGHITNLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalAGHILabel">Asistente de Administración y Gestión con
+                        Herramientas Informáticas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 3</p>
+                    <p><b>Turno:</b> Noche</p>
+                    <p><b>Duraci;on:</b> Anual</p>
+                    <p><b>Dias:</b> Martes a Viernes</p>
+                    <p><b>Horario:</b> 18:00hs. a 22:00hs.</p>
+                    <p><b>Fundamentación:</b> Formación integral para tareas administrativas apoyadas en herramientas
+                        digitales.</p>
+                    <p><b>Docente:</b> M.E.P. Cárdenas, Cristina</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade modal-custom" id="modalSoporteTM" tabindex="-1" aria-labelledby="modalSoporteTMLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalSoporteLabel">Asistente informático en soporte técnico - TM
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 17</p>
+                    <p><b>Turno:</b> Mañana</p>
+                    <p><b>Duración:</b> Anual</p>
+                    <p><b>Dias:</b> Grupo#1 -> Lunes a Miércoles ó Grupo#2 -> Miércoles a Viernes</p>
+                    <p><b>Horario:</b> 08:00hs. a 12:00hs.</p>
+                    <p><b>Fundamentación:</b> Capacitación para dar soporte y asistencia a usuarios y equipos.</p>
+                    <p><b>Docente:</b> M.E.P. Fernández, Mario</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalSoporteTT" tabindex="-1" aria-labelledby="modalSoporteTTLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalSoporteLabel">Asistente informático en soporte técnico - TT
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 17</p>
+                    <p><b>Turno:</b> Tarde</p>
+                    <p><b>Duración:</b> Anual</p>
+                    <p><b>Dias:</b> Grupo#1 -> Lunes a Miércoles ó Grupo#2 -> Miércoles a Viernes</p>
+                    <p><b>Horario:</b> 14:00hs. a 18:00hs.</p>
+                    <p><b>Fundamentación:</b> Capacitación para dar soporte y asistencia a usuarios y equipos.</p>
+                    <p><b>Docente:</b> M.E.P. Cochia, Ariel</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalIRSAM" tabindex="-1" aria-labelledby="modalIRSAMLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalIRSAMLabel">Internet y Redes Sociales para Adultos Mayores
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 2</p>
+                    <p><b>Turno:</b> Mañana</p>
+                    <p><b>Duración:</b> 1er. Cuatrimestre</p>
+                    <p><b>Dias:</b> Martes a Viernes</p>
+                    <p><b>Horario:</b> 08:00hs. a 12:00hs.</p>
+                    <p><b>Fundamentación:</b> Conocimiento básico de Internet y redes sociales orientado al usuario
+                        adulto mayor.</p>
+                    <p><b>Docente:</b> M.E.P. Cárdenas, Cristina</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copia un modal similar para cada una de las otras 7 ofertas -->
+    <!-- ... -->
+    <!-- Recuerda actualizar el id, aria-labelledby, el título y los datos internos de cada modal según corresponda. -->
+
+    <div class="modal fade modal-custom" id="modalReparadorTM" tabindex="-1" aria-labelledby="modalReparadorTMLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalReparadorLabel">Reparador de PC y Periféricos - Turno
+                        Mañana</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 17</p>
+                    <p><b>Turno:</b> Mañana</p>
+                    <p><b>Duración:</b> Anual</p>
+                    <p><b>Dias:</b> Grupo#1 -> Lunes a Miércoles ó Grupo#2 -> Miércoles a Viernes</p>
+                    <p><b>Horario:</b> 08:00hs. a 12:00hs.</p>
+                    <p><b>Fundamentación:</b> Capacitación avanzada para dar soporte y asistencia a usuarios y equipos.
+                    </p>
+                    <p><b>Docente:</b> M.E.P. Fernández, Mario</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalReparadorTT" tabindex="-1" aria-labelledby="modalReparadorTTLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalReparadorLabel">Reparador de PC y Periféricos - Turno
+                        Tarde</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 17</p>
+                    <p><b>Turno:</b> Tarde</p>
+                    <p><b>Duración:</b> Anual</p>
+                    <p><b>Dias:</b> Grupo#1 -> Lunes a Miércoles ó Grupo#2 -> Miércoles a Viernes</p>
+                    <p><b>Horario:</b> 14:00hs. a 18:00hs.</p>
+                    <p><b>Fundamentación:</b> Capacitación avanzada para dar soporte y asistencia a usuarios y equipos.
+                    </p>
+                    <p><b>Docente:</b> M.E.P. Cochia, Ariel</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
