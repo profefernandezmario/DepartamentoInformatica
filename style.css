@@ -214,3 +214,38 @@ body {
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
 }
+
+
+.requisito-item,
+.oferta-item,
+.docente-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.requisito-item:hover,
+.oferta-item:hover,
+.docente-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.requisito-icon,
+.oferta-icon,
+.docente-icon {
+  color: var(--secondary-color);
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.requisito-text,
+.oferta-text,
+.docente-text {
+  flex: 1;
+}
