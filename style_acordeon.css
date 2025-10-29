@@ -249,3 +249,22 @@ body {
 .docente-text {
   flex: 1;
 }
+
+/* adpatacion del logo a pantallas pequeñas */
+@media (max-width: 600px) {
+  .header-logo {
+    width: 150px;
+  }
+
+  .header-logo img {
+    width: 130px;
+  }
+
+  .header-center h1 {
+    font-size: 1.1rem;
+  }
+
+  .header-center p {
+    font-size: 0.85rem;
+  }
+}
