@@ -7,7 +7,7 @@
     <title>Departamento de Informática - E.F.P. N°7</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style_filtros.css">
+    <link rel="stylesheet" href="style_acordeon.css">
 </head>
 
 <body>
@@ -24,203 +24,249 @@
         </div>
     </header>
 
-    <!-- agregado de filtos  -->
-
-    <!-- Botones filtro por turno -->
+    <!-- OFERTAS EDUCATIVAS LISTADO UNIFICADO -->
     <section class="container py-4">
         <h2 class="display-5 fw-bold mb-4 text-uppercase text-center">Ofertas Educativas</h2>
-        <div class="btn-group mb-4 d-flex justify-content-center" role="group" aria-label="Filtros de turno">
-            <button type="button" class="btn btn-outline-primary active" data-turno="todos">Todos</button>
-            <button type="button" class="btn btn-outline-primary" data-turno="manana">Mañana</button>
-            <button type="button" class="btn btn-outline-primary" data-turno="tarde">Tarde</button>
-            <button type="button" class="btn btn-outline-primary" data-turno="noche">Noche</button>
-        </div>
+        <div class="row g-4 justify-content-center">
+
+            <!-- inicio del acordeon de Bootstrap -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Turno Mañana
+                        </button>
+                    </h2>
+
+                    <!-- tarjetas turno mañana -->
+                    <div class="agrupamiento d-flex col-lg-12 col-sm-6">
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Asistente de Administración y Gestión con Herramientas Informáticas</strong>
+                                <button class="btn btn-custom mt-0" data-bs-toggle="modal"
+                                    data-bs-target="#modalAGHITM">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Asistente informático en soporte técnico</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalSoporteTM">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Internet y Redes Sociales para Adultos Mayores</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalIRSAM">Más
+                                    info</button>
+                            </div>
+                        </div>
+                    </div> <!-- fin de agrupamiento -->
+                    <div class="agrupamiento d-flex col-lg-12 col-sm-6">
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Operador de informática para administración y gestión</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalOIAGTM">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Operador de PC para Adultos Mayores</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalOPAM">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Operador de planilla de cálculos para la administración</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalPlanilla">Más
+                                    info</button>
+                            </div>
+                        </div>
+                    </div> <!-- fin de agrupamiento -->
+                    <div class="agrupamiento d-flex col-lg-12 col-sm-6">
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Operador de procesador de textos para la administración</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalTextos">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Redacción administrativa y comercial</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalRedaccion">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Reparador de PC y Periféricos</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalReparadorTM">Más
+                                    info</button>
+                            </div>
+                        </div>
+                    </div> <!-- fin de agrupamiento -->
+                </div> <!-- fin de accordion item turno mañana -->
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Turno Tarde
+                        </button>
+                    </h2>
+
+                    <!-- tarjetas turno tarde -->
+                    <div class="agrupamiento d-flex col-lg-12 col-sm-6">
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Asistente de Administración y Gestión con Herramientas Informáticas</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalAGHITT">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Asistente informático en soporte técnico</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalSoporteTT">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Desarrollador Web Jr. - FrontEnd</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalDesarrolladorFrontTT">Más
+                                    info</button>
+                            </div>
+                        </div>
+                    </div> <!-- fin de agrupamiento -->
+                    <div class="agrupamiento d-flex col-lg-12 col-sm-6">
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Operador de informática para administración y
+                                    gestión</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalOIAGTT">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Reparador de PC y Periféricos</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalReparadorTT">Más
+                                    info</button>
+                            </div>
+                        </div>
+                    </div> <!-- fin de agrupamiento -->
+                </div> <!-- fin de accordion item turno tarde -->
 
 
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Turno Noche
+                        </button>
+                    </h2>
 
-        <!-- fin agregado de filtos  -->
+                    <!-- tarjetas turno noche -->
+                    <div class="agrupamiento d-flex col-lg-12 col-sm-6">
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Asistente de Administración y Gestión con
+                                    Herramientas Informáticas</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalAGHITN">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Desarrollador Web Jr. - FrontEnd</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalDesarrolladorFrontTN">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Desarrollador Web Jr. - BackEnd</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalDesarrolladorBackTN">Más
+                                    info</button>
+                            </div>
+                        </div>
+                    </div> <!-- fin de agrupamiento -->
+                    <div class="agrupamiento d-flex col-lg-12 col-sm-6">
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Linux esencial</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalLinux">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Mantenimiento preventivo de impresoras</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalImpresoras">Más
+                                    info</button>
+                            </div>
+                        </div>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <strong>Operador de informática para administración y
+                                    gestión</strong>
+                                <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                                    data-bs-target="#modalOIAGTN">Más
+                                    info</button>
+                            </div>
+                        </div>
+                    </div> <!-- fin de agrupamiento -->
+                </div> <!-- fin de accordion item turno noche -->
+            </div> <!-- fin del acordeon de Bootstrap  -->
+    </section> <!-- fin de sección ofertas educativas -->
 
-        <!-- OFERTAS EDUCATIVAS LISTADO UNIFICADO -->
-        <section class="container py-4">
-            <h2 class="display-5 fw-bold mb-4 text-uppercase text-center">Ofertas Educativas</h2>
-            <!-- <div class="row g-4 justify-content-center"> -->
-            <div class="row g-4 justify-content-center" id="tarjetas-container">
-                <!-- Aquí van todas las tarjetas de ofertas (ordena y completa datos según tus necesidades) -->
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-manana">
-                        <strong>Asistente de Administración y Gestión con Herramientas Informáticas - Turno
-                            Mañana</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalAGHITM">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-tarde">
-                        <strong>Asistente de Administración y Gestión con Herramientas Informáticas - Turno
-                            Tarde</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalAGHITT">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-noche">
-                        <strong>Asistente de Administración y Gestión con Herramientas Informáticas - Turno
-                            Noche</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalAGHITN">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-manana">
-                        <strong>Asistente informático en soporte técnico - Turno Mañana</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalSoporteTM">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-tarde">
-                        <strong>Asistente informático en soporte técnico - Turno Tarde</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalSoporteTT">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-tarde">
-                        <strong>Desarrollador Web Jr. - FrontEnd - Turno Tarde</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal"
-                            data-bs-target="#modalDesarrolladorFrontTT">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-noche">
-                        <strong>Desarrollador Web Jr. - FrontEnd - Turno Noche</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal"
-                            data-bs-target="#modalDesarrolladorFrontTN">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item  turno-noche">
-                        <strong>Desarrollador Web Jr. - BackEnd - Turno Noche</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal"
-                            data-bs-target="#modalDesarrolladorBackTN">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item  turno-manana">
-                        <strong>Internet y Redes Sociales para Adultos Mayores</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalIRSAM">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-manana">
-                        <strong>Linux esencial</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalLinux">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-manana">
-                        <strong>Mantenimiento preventivo de impresoras</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalImpresoras">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-manana">
-                        <strong>Operador de informática para administración y gestión - Turno Mañana</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalOIAGTM">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-tarde">
-                        <strong>Operador de informática para administración y gestión - Turno Tarde</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalOIAGTT">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-tarde">
-                        <strong>Operador de informática para administración y gestión - Turno Noche</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalOIAGTN">Más
-                            info</button>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-manana">
-                        <strong>Operador de PC para Adultos Mayores</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalOPAM">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-manana">
-                        <strong>Operador de planilla de cálculos para la administración</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalPlanilla">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-manana">
-                        <strong>Operador de procesador de textos para la administración</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalTextos">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-manana">
-                        <strong>Redacción administrativa y comercial</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalRedaccion">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-manana">
-                        <strong>Reparador de PC y Periféricos - Turno Mañana</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal"
-                            data-bs-target="#modalReparadorTM">Más
-                            info</button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-xl-4">
-                    <div class="card-custom p-3 d-flex flex-column align-items-start list-item turno-tarde">
-                        <strong>Reparador de PC y Periféricos - Turno Tarde</strong>
-                        <button class="btn btn-custom mt-2" data-bs-toggle="modal"
-                            data-bs-target="#modalReparadorTT">Más
-                            info</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <!-- MODALES (uno por cada oferta, completá los datos según tu contenido real) -->
-
-    <!-- Ejemplo modal. Copia y adapta para cada oferta -->
+    <!-- MODALES CON INFORMACIÓN DETALLADA DE CADA OFERTA EDUCATIVA -->
     <div class="modal fade modal-custom" id="modalAGHITM" tabindex="-1" aria-labelledby="modalAGHITMLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -762,28 +808,6 @@
             </div> -->
         </div>
     </footer>
-
-    <script>
-        document.querySelectorAll('.btn-group button').forEach(button => {
-            button.addEventListener('click', () => {
-                const turno = button.getAttribute('data-turno');
-
-                // Cambiar el botón activo
-                document.querySelectorAll('.btn-group button').forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                // Mostrar u ocultar tarjetas según el turno
-                document.querySelectorAll('.card-custom').forEach(card => {
-                    if (turno === 'todos') {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = card.classList.contains('turno-' + turno) ? 'block' : 'none';
-                    }
-                });
-            });
-        });
-    </script>
-
 
     <!-- BOOTSTRAP SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
