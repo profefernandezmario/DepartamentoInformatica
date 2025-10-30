@@ -22,13 +22,14 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Validación y envío del formulario
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+// comentado para solucionar conflicto con envio de email (CORS)
+// document.getElementById('contactForm').addEventListener('submit', function (e) {
+//     e.preventDefault();
 
-    if (validateForm()) {
-        submitForm();
-    }
-});
+//     if (validateForm()) {
+//         submitForm();
+//     }
+// });
 
 // Validación del formulario
 function validateForm() {
