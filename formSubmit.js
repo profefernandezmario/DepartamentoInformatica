@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Establecer URL de éxito dinámicamente
     const successUrl = window.location.href.split('?')[0] + '?success=true';
-    
+
     // Crear input hidden si no existe
     let successUrlInput = document.getElementById('formSuccessUrl');
     if (!successUrlInput) {
@@ -69,11 +69,11 @@ function showAlert(message, type) {
         ${message}
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     `;
-    
+
     // Insertar antes del formulario
     const form = document.getElementById('contactForm');
     form.parentNode.insertBefore(alertDiv, form);
-    
+
     // Auto-eliminar después de 5 segundos
     setTimeout(() => {
         if (alertDiv.parentNode) {
@@ -94,32 +94,38 @@ function submitForm() {
     spinner.classList.remove('d-none');
     submitBtn.disabled = true;
 
+    // control de depuración por consola
+    console.log('Enviando formulario a:', form.action);
+    console.log('Datos del formulario:', new FormData(form));
+
+
     // Enviar formulario usando FormSubmit
     fetch(form.action, {
         method: 'POST',
         body: new FormData(form)
     })
         .then(response => {
-            if (response.ok) {
-                showAlert('¡Consulta enviada con éxito! Nos pondremos en contacto contigo pronto.', 'success');
-                form.reset();
-
-                // Redirigir a página de éxito después de 2 segundos
-                setTimeout(() => {
-                    window.location.href = document.getElementById('formSuccessUrl').value;
-                }, 2000);
-            } else {
-                throw new Error('Error en el envío');
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            showAlert('Error al enviar la consulta. Por favor, intente nuevamente.', 'error');
-        })
-        .finally(() => {
-            // Restaurar estado normal del botón
-            submitText.textContent = 'Enviar Consulta';
-            spinner.classList.add('d-none');
-            submitBtn.disabled = false;
-        });
+        console.log('Respuesta recibida:', response.status, response.statusText);
+        if (response.ok) {
+            showAlert('¡Consulta enviada con éxito! Nos pondremos en contacto contigo pronto.', 'success');
+            form.reset();
+            
+            // Redirigir a página de éxito después de 2 segundos
+            setTimeout(() => {
+                window.location.href = document.getElementById('formSuccessUrl').value;
+            }, 2000);
+        } else {
+            throw new Error(`Error HTTP: ${response.status}`);
+        }
+    })
+       .catch(error => {
+        console.error('Error en el envío:', error);
+        showAlert('Error al enviar la consulta. Por favor, intente nuevamente.', 'error');
+    })
+    .finally(() => {
+        // Restaurar estado normal del botón
+        submitText.textContent = 'Enviar Consulta';
+        spinner.classList.add('d-none');
+        submitBtn.disabled = false;
+    });
 }

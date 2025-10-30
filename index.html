@@ -694,49 +694,44 @@
                     <div class="card-custom p-4">
                         <form id="contactForm" action="https://formsubmit.co/profe.fernandezmario@gmail.com"
                             method="POST">
-
+                            <!-- Campos hidden de FormSubmit -->
                             <input type="hidden" name="_subject" value="Consulta desde EFP7-Informatica" />
                             <input type="hidden" name="_captcha" value="false" />
                             <input type="hidden" name="_template" value="table" />
-                            <!-- agregado por deepseek -->
                             <input type="hidden" id="formSuccessUrl" name="_next" />
-                        </form>
-                        <!-- <input type="hidden" name="_next" value="https://efp7-informatica.netlify.app/gracias.html" />  anulado por deepseek -->
 
-                        <div class="row mb-3">
-                            <div class="col-md-6 mb-3 mb-md-0">
-                                <label for="name" class="form-label text-blue-200 fw-medium">Nombre
-                                    Completo</label>
-                                <input type="text" class="form-control form-control-custom" id="name" name="name"
-                                    required>
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label for="name" class="form-label text-blue-200 fw-medium">Nombre
+                                        Completo</label>
+                                    <input type="text" class="form-control form-control-custom" id="name" name="name"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label text-blue-200 fw-medium">Correo
+                                        Electrónico</label>
+                                    <input type="email" class="form-control form-control-custom" id="email" name="email"
+                                        required>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label text-blue-200 fw-medium">Correo
-                                    Electrónico</label>
-                                <input type="email" class="form-control form-control-custom" id="email" name="email"
-                                    required>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label text-blue-200 fw-medium">Teléfono
+                                    (Opcional)</label>
+                                <input type="tel" class="form-control form-control-custom" id="phone" name="phone">
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label text-blue-200 fw-medium">Teléfono
-                                (Opcional)</label>
-                            <input type="tel" class="form-control form-control-custom" id="phone" name="phone">
-                        </div>
-                        <div class="mb-4">
-                            <label for="message" class="form-label text-blue-200 fw-medium">Mensaje</label>
-                            <textarea class="form-control form-control-custom" id="message" name="message" rows="5"
-                                required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" id="submitBtn" class="btn btn-custom px-5 py-2">Enviar
-                                Consulta
-                                <span class="submit-text">Enviar Consulta</span>
-                                <!-- agregado por deepseek  -->
-                                <span class="spinner-border spinner-border-sm d-none ms-2" role="status"
-                                    aria-hidden="true"></span> <!-- agregado por deepseek  -->
-                            </button>
+                            <div class="mb-4">
+                                <label for="message" class="form-label text-blue-200 fw-medium">Mensaje</label>
+                                <textarea class="form-control form-control-custom" id="message" name="message" rows="5"
+                                    required></textarea>
+                            </div>
 
-                        </div>
+                            <div class="text-center">
+                                <button type="submit" id="submitBtn" class="btn btn-custom px-5 py-2">
+                                    <span class="submit-text">Enviar Consulta</span>
+                                    <!-- agregado por deepseek  -->
+                                    <span class="spinner-border spinner-border-sm d-none ms-2" role="status"
+                                        aria-hidden="true"></span>
+                                </button>
                         </form>
                     </div>
                 </div>
