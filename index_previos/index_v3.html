@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento de Informática - E.F.P. N°7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header-bg">
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="media/logosDepto/generated-image (3).png" alt="Logo EFP7">
+            </div>
+            <div class="header-center">
+                <h1>Departamento de Informática</h1>
+                <p>Avda. Castelli 1150 - Resistencia, Chaco</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- OFERTAS EDUCATIVAS LISTADO UNIFICADO -->
+    <section class="container py-4">
+        <h2 class="display-5 fw-bold mb-4 text-uppercase text-center">Ofertas Educativas</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Aquí van todas las tarjetas de ofertas (ordena y completa datos según tus necesidades) -->
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Asistente de Administración y Gestión con Herramientas Informáticas - Turno Mañana</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalAGHITM">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Asistente de Administración y Gestión con Herramientas Informáticas - Turno Tarde</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalAGHITT">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Asistente de Administración y Gestión con Herramientas Informáticas - Turno Noche</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalAGHITN">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Asistente informático en soporte técnico - Turno Mañana</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalSoporteTM">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Asistente informático en soporte técnico - Turno Tarde</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalSoporteTT">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Desarrollador Web Jr. - FrontEnd - Turno Tarde</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalDesarrolladorFrontTT">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Desarrollador Web Jr. - FrontEnd - Turno Noche</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalDesarrolladorFrontTN">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Desarrollador Web Jr. - BackEnd - Turno Noche</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal"
+                        data-bs-target="#modalDesarrolladorBackTN">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Internet y Redes Sociales para Adultos Mayores</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalIRSAM">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Linux esencial</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalLinux">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Mantenimiento preventivo de impresoras</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalImpresoras">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Operador de informática para administración y gestión - Turno Mañana</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalOIAGTM">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Operador de informática para administración y gestión - Turno Tarde</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalOIAGTT">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Operador de informática para administración y gestión - Turno Noche</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalOIAGTN">Más
+                        info</button>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Operador de PC para Adultos Mayores</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalOPAM">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Operador de planilla de cálculos para la administración</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalPlanilla">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Operador de procesador de textos para la administración</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalTextos">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Redacción administrativa y comercial</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalRedaccion">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Reparador de PC y Periféricos - Turno Mañana</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalReparadorTM">Más
+                        info</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card-custom p-3 d-flex flex-column align-items-start list-item">
+                    <strong>Reparador de PC y Periféricos - Turno Tarde</strong>
+                    <button class="btn btn-custom mt-2" data-bs-toggle="modal" data-bs-target="#modalReparadorTT">Más
+                        info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODALES (uno por cada oferta, completá los datos según tu contenido real) -->
+
+    <!-- Ejemplo modal. Copia y adapta para cada oferta -->
+    <div class="modal fade modal-custom" id="modalAGHITM" tabindex="-1" aria-labelledby="modalAGHITMLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalAGHILabel">Asistente de Administración y Gestión con
+                        Herramientas Informáticas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 3</p>
+                    <p><b>Turno:</b> Mañana</p>
+                    <p><b>Duraci;on:</b> Anual</p>
+                    <p><b>Dias:</b> Lunes a Jueves</p>
+                    <p><b>Horario:</b> 08:00hs. a 12:00hs.</p>
+                    <p><b>Fundamentación:</b> Formación integral para tareas administrativas apoyadas en herramientas
+                        digitales.</p>
+                    <p><b>Docente:</b> M.E.P. Cuesta, Jorge</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalAGHITT" tabindex="-1" aria-labelledby="modalAGHITTLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalAGHILabel">Asistente de Administración y Gestión con
+                        Herramientas Informáticas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 3</p>
+                    <p><b>Turno:</b> Tarde</p>
+                    <p><b>Duraci;on:</b> Anual</p>
+                    <p><b>Dias:</b> Lunes a Jueves</p>
+                    <p><b>Horario:</b> 14:00hs. a 18:00hs.</p>
+                    <p><b>Fundamentación:</b> Formación integral para tareas administrativas apoyadas en herramientas
+                        digitales.</p>
+                    <p><b>Docente:</b> M.E.P. Cuesta, Jorge</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalAGHITN" tabindex="-1" aria-labelledby="modalAGHITNLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalAGHILabel">Asistente de Administración y Gestión con
+                        Herramientas Informáticas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 3</p>
+                    <p><b>Turno:</b> Noche</p>
+                    <p><b>Duraci;on:</b> Anual</p>
+                    <p><b>Dias:</b> Martes a Viernes</p>
+                    <p><b>Horario:</b> 18:00hs. a 22:00hs.</p>
+                    <p><b>Fundamentación:</b> Formación integral para tareas administrativas apoyadas en herramientas
+                        digitales.</p>
+                    <p><b>Docente:</b> M.E.P. Cárdenas, Cristina</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade modal-custom" id="modalSoporteTM" tabindex="-1" aria-labelledby="modalSoporteTMLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalSoporteTMLabel">Asistente informático en soporte técnico
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 17</p>
+                    <p><b>Turno:</b> Mañana</p>
+                    <p><b>Duración:</b> Anual</p>
+                    <p><b>Dias:</b> Grupo#1 -> Lunes a Miércoles | Grupo#2 -> Miércoles a Viernes</p>
+                    <p><b>Horario:</b> 08:00hs. a 12:00hs.</p>
+                    <p><b>Fundamentación:</b> Capacitación para dar soporte y asistencia a usuarios y equipos.</p>
+                    <p><b>Docente:</b> M.E.P. Fernández, Mario</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalSoporteTT" tabindex="-1" aria-labelledby="modalSoporteTTLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalSoporteTTLabel">Asistente informático en soporte técnico
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 17</p>
+                    <p><b>Turno:</b> Tarde</p>
+                    <p><b>Duración:</b> Anual</p>
+                    <p><b>Dias:</b> Grupo#1 -> Lunes a Miércoles | Grupo#2 -> Miércoles a Viernes</p>
+                    <p><b>Horario:</b> 14:00hs. a 18:00hs.</p>
+                    <p><b>Fundamentación:</b> Capacitación para dar soporte y asistencia a usuarios y equipos.</p>
+                    <p><b>Docente:</b> M.E.P. Cochia, Ariel</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalDesarrolladorFrontTT" tabindex="-1"
+        aria-labelledby="modalDesarrolladorFrontTTLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalDesarrolladorFrontTTLabel">Desarrollador Web Jr. - FrontEnd
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 2</p>
+                    <p><b>Turno:</b> Tarde</p>
+                    <p><b>Duración:</b> Anual</p>
+                    <p><b>Dias:</b> Grupo#1 -> Lunes y Martes | Grupo#2 -> Jueves y Viernes</p>
+                    <p><b>Horario:</b> 14:00hs. a 18:00hs.</p>
+                    <p><b>Fundamentación:</b> Diseño y creación de páginas web usando HTML, CSS, BOOTSTRAP Y JAVASCRIPT.
+                    </p>
+                    <p><b>Docente:</b> M.E.P. Fernández, Mario</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalDesarrolladorFrontTN" tabindex="-1"
+        aria-labelledby="modalDesarrolladorFrontTNLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalDesarrolladorFrontTNLabel">Desarrollador Web Jr. - FrontEnd
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 2</p>
+                    <p><b>Turno:</b> Noche</p>
+                    <p><b>Duración:</b> Cuatrimestral (1er. Cuatrimestre)</p>
+                    <p><b>Dias:</b> Lunes a Jueves</p>
+                    <p><b>Horario:</b> 18:00hs. a 22:00hs.</p>
+                    <p><b>Fundamentación:</b> Diseño y creación de páginas web usando HTML, CSS, BOOTSTRAP Y JAVASCRIPT.
+                    </p>
+                    <p><b>Docente:</b> M.E.P. Asborno, Gabriel</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalDesarrolladorBackTN" tabindex="-1"
+        aria-labelledby="modalDesarrolladorBackTNLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalDesarrolladorBackTNLabel">Desarrollador Web Jr. - BackEnd
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 2</p>
+                    <p><b>Turno:</b> Noche</p>
+                    <p><b>Duración:</b> Cuatrimestral (2do. Cuatrimestre)</p>
+                    <p><b>Dias:</b> Lunes a Jueves</p>
+                    <p><b>Horario:</b> 18:00hs. a 22:00hs.</p>
+                    <p><b>Fundamentación:</b> Diseño y creación de páginas web usando MySQL y PHP.
+                    </p>
+                    <p><b>Docente:</b> M.E.P. Asborno, Gabriel</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalIRSAM" tabindex="-1" aria-labelledby="modalIRSAMLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalIRSAMLabel">Internet y Redes Sociales para Adultos Mayores
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 2</p>
+                    <p><b>Turno:</b> Mañana</p>
+                    <p><b>Duración:</b> 1er. Cuatrimestre</p>
+                    <p><b>Dias:</b> Martes a Viernes</p>
+                    <p><b>Horario:</b> 08:00hs. a 12:00hs.</p>
+                    <p><b>Fundamentación:</b> Conocimiento básico de Internet y redes sociales orientado al usuario
+                        adulto mayor.</p>
+                    <p><b>Docente:</b> M.E.P. Cárdenas, Cristina</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalOIAGTM" tabindex="-1" aria-labelledby="modalOIAGTMLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalOIAGTMLabel">Operador de Informática para Administración y
+                        Gestion</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 3</p>
+                    <p><b>Turno:</b> Mañana</p>
+                    <p><b>Duración:</b> Anual</p>
+                    <p><b>Dias:</b> Lunes a Jueves</p>
+                    <p><b>Horario:</b> 08:00hs. a 12:00hs.</p>
+                    <p><b>Fundamentación:</b> Realiza tareas tecnicas y administrativas relacionadas con el manejo de
+                        sistemas informaticos.</p>
+                    <p><b>Docente:</b> M.E.P. Cuesta, Jorge</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalOIAGTT" tabindex="-1" aria-labelledby="modalOIAGTTLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalOIAGTTLabel">Operador de Informática para Administración y
+                        Gestion</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 3</p>
+                    <p><b>Turno:</b> Tarde</p>
+                    <p><b>Duración:</b> Anual</p>
+                    <p><b>Dias:</b> Lunes a Jueves</p>
+                    <p><b>Horario:</b> 14:00hs. a 18:00hs.</p>
+                    <p><b>Fundamentación:</b> Realiza tareas tecnicas y administrativas relacionadas con el manejo de
+                        sistemas informaticos.</p>
+                    <p><b>Docente:</b> M.E.P. Cuesta, Jorge</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalOIAGTN" tabindex="-1" aria-labelledby="modalOIAGTNLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalOIAGTNLabel">Operador de Informática para Administración y
+                        Gestion</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 3</p>
+                    <p><b>Turno:</b> Noche</p>
+                    <p><b>Duración:</b> Anual</p>
+                    <p><b>Dias:</b> Martes a Viernes</p>
+                    <p><b>Horario:</b> 18:00hs. a 22:00hs.</p>
+                    <p><b>Fundamentación:</b> Realiza tareas tecnicas y administrativas relacionadas con el manejo de
+                        sistemas informaticos.</p>
+                    <p><b>Docente:</b> M.E.P. Cárdenas, Cristina</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copia un modal similar para cada una de las otras 7 ofertas -->
+
+
+    <div class="modal fade modal-custom" id="modalReparadorTM" tabindex="-1" aria-labelledby="modalReparadorTMLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalReparadorLabel">Reparador de PC y Periféricos</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 17</p>
+                    <p><b>Turno:</b> Mañana</p>
+                    <p><b>Duración:</b> Anual</p>
+                    <p><b>Dias:</b> Grupo#1 -> Lunes a Miércoles ó Grupo#2 | Miércoles a Viernes</p>
+                    <p><b>Horario:</b> 08:00hs. a 12:00hs.</p>
+                    <p><b>Fundamentación:</b> Capacitación avanzada para dar soporte y asistencia a usuarios y equipos.
+                    </p>
+                    <p><b>Docente:</b> M.E.P. Fernández, Mario</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-custom" id="modalReparadorTT" tabindex="-1" aria-labelledby="modalReparadorTTLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-header modal-header-custom">
+                    <h5 class="modal-title fw-bold" id="modalReparadorLabel">Reparador de PC y Periféricos</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body modal-body-custom">
+                    <p><b>Aula:</b> 17</p>
+                    <p><b>Turno:</b> Tarde</p>
+                    <p><b>Duración:</b> Anual</p>
+                    <p><b>Dias:</b> Grupo#1 -> Lunes a Miércoles | Grupo#2 -> Miércoles a Viernes</p>
+                    <p><b>Horario:</b> 14:00hs. a 18:00hs.</p>
+                    <p><b>Fundamentación:</b> Capacitación avanzada para dar soporte y asistencia a usuarios y equipos.
+                    </p>
+                    <p><b>Docente:</b> M.E.P. Cochia, Ariel</p>
+                </div>
+                <div class="modal-footer modal-footer-custom">
+                    <button type="button" class="btn btn-outline-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Requisitos -->
+    <section class="py-5" style="background: rgba(0, 0, 0, 0.2);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold display-6 mb-3" id="modalRequisitosLabel">
+                            <i class="fas fa-clipboard-list me-2"></i>Requisitos de Inscripción
+                        </h2>
+                    </div>
+                    <div class="modal-body modal-body-custom">
+                        <div class="requisito-item">
+                            <div class="requisito-icon">
+                                <i class="fas fa-file-certificate"></i>
+                            </div>
+                            <div class="requisito-text">
+                                <strong>Constancia / Certificado / Título de Ciclo Básico secundario aprobado</strong>
+                            </div>
+                        </div>
+                        <div class="requisito-item">
+                            <div class="requisito-icon">
+                                <i class="fas fa-id-card"></i>
+                            </div>
+                            <div class="requisito-text">
+                                <strong>Fotocopia DNI</strong>
+                            </div>
+                        </div>
+                        <div class="requisito-item">
+                            <div class="requisito-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="requisito-text">
+                                <strong>Certificado / Constancia de domicilio (policial o boleta de servicio)</strong>
+                            </div>
+                        </div>
+                        <div class="requisito-item">
+                            <div class="requisito-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="requisito-text">
+                                <strong>Certificado de salud</strong>
+                            </div>
+                        </div>
+                        <div class="requisito-item">
+                            <div class="requisito-icon">
+                                <i class="fas fa-tooth"></i>
+                            </div>
+                            <div class="requisito-text">
+                                <strong>Certificado Bucodental</strong>
+                            </div>
+                        </div>
+                        <div class="requisito-item">
+                            <div class="requisito-icon">
+                                <i class="fas fa-file-medical"></i>
+                            </div>
+                            <div class="requisito-text">
+                                <strong>Completar y presentar Ficha Médica</strong>
+                            </div>
+                        </div>
+                        <div class="requisito-item">
+                            <div class="requisito-icon">
+                                <i class="fas fa-file-signature"></i>
+                            </div>
+                            <div class="requisito-text">
+                                <strong>Completar y presentar Ficha Inscripción</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form Section -->
+    <section class="py-5" style="background: rgba(0, 0, 0, 0.2);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <div class="icon-bg">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h2 class="display-6 fw-bold mb-3">Consultas y Más Información</h2>
+                        <p class="text-blue-200">Contactanos para obtener más detalles sobre nuestras ofertas
+                            educativas
+                        </p>
+                    </div>
+
+                    <div class="card-custom p-4">
+                        <form id="contactForm">
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label for="name" class="form-label text-blue-200 fw-medium">Nombre
+                                        Completo</label>
+                                    <input type="text" class="form-control form-control-custom" id="name" name="name"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label text-blue-200 fw-medium">Correo
+                                        Electrónico</label>
+                                    <input type="email" class="form-control form-control-custom" id="email" name="email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label text-blue-200 fw-medium">Teléfono
+                                    (Opcional)</label>
+                                <input type="tel" class="form-control form-control-custom" id="phone" name="phone">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="form-label text-blue-200 fw-medium">Mensaje</label>
+                                <textarea class="form-control form-control-custom" id="message" name="message" rows="5"
+                                    required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-custom px-5 py-2">Enviar Consulta</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg py-4">
+        <hr>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h3 class="h5 fw-bold text-white mb-2">E.F.P. Nº7</h3>
+                    <div class="text-blue-200">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-1">
+                            <i class="fas fa-envelope me-2"></i>
+                            <span>info.efp7@gmail.com</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-1">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            <span>Resistencia - Chaco</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                            <i class="fas fa-envelope me-2"></i>
+                            <span>deptoinformatica@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="https://www.facebook.com/escfp7" target="_blank" class="social-icon" title="Facebook">
+                            <i class="fab fa-facebook-f text-blue-400"></i>
+                        </a>
+                        <a href="https://www.instagram.com/efp7ok/" target="_blank" class="social-icon"
+                            title="Instagram">
+                            <i class="fab fa-instagram text-pink"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="border-top border-blue-500 mt-4 pt-4 text-center">
+                <p class="text-blue-300 mb-0">© 2025 Escuela de Formación Profesional Nº7 - Departamento de Informática
+                </p>
+            </div> -->
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
